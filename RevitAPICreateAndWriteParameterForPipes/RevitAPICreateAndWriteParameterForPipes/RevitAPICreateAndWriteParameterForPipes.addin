@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly> "C:\Program Files\RevitAPITraining\RevitAPICreateAndWriteParameterForPipes.dll" </Assembly>
+		<AddInId>90A46EF6-D368-4498-89E1-6B7DEC1BE303</AddInId>
+		<FullClassName>RevitAPICreateAndWriteParameterForPipes.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Создание и запись параметра "Длина с запасом" для труб </Text>
+	</AddIn>
+</RevitAddIns>

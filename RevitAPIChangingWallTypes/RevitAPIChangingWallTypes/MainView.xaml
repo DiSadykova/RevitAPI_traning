@@ -1,0 +1,20 @@
+﻿<Window x:Class="RevitAPIChangingWallTypes.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPIChangingWallTypes"
+             mc:Ignorable="d" 
+             Height="150" Width="300"
+        Title="Тип стен">
+    <StackPanel>
+        <Label Content="Выбор типа"
+               Margin="5"/>
+        <ComboBox ItemsSource="{Binding WallTypes}"
+                  SelectedValue="{Binding SelectedWallType}"
+                  DisplayMemberPath="Name"
+                  Margin="5"/>
+        <Button Content="Применить"
+                Command="{Binding SaveCommand}"/>
+    </StackPanel>
+</Window>

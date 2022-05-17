@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly> "C:\Program Files\RevitAPITraining\RevitAPICreateElementsAtEqualDistances.dll" </Assembly>
+		<AddInId>89D315CA-F4E7-43B3-956D-AE342F23CA74</AddInId>
+		<FullClassName>RevitAPICreateElementsAtEqualDistances.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Создание элементов на равных расстояниях</Text>
+	</AddIn>
+</RevitAddIns>

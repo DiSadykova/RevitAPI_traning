@@ -1,0 +1,25 @@
+﻿<Window x:Class="RevitAPICreateButton.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPICreateButton"
+             mc:Ignorable="d" 
+             Height="240" Width="300"
+             Title="Информация по элементам">
+    <StackPanel>
+        <Label Content="Количество труб в модели"
+               Margin="5"/>
+        <Button Content="Вывести" Command="{Binding OutputForPipesCommand }"
+                Margin="5"/>
+        <Label Content="Объем всех стен в модели"
+               Margin="5"/>
+        <Button Content="Вывести" Command="{Binding OutputForWallsCommand }"
+                Margin="5"/>
+        <Label Content="Количество дверей в модели"
+               Margin="5"/>
+        <Button Content="Вывести" Command="{Binding OutputForDoorsCommand }"
+                Margin="5"/>
+    </StackPanel>
+    
+</Window>

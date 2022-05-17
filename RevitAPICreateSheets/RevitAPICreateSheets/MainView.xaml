@@ -1,0 +1,44 @@
+﻿<Window x:Class="RevitAPICreateSheets.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPICreateSheets"
+             mc:Ignorable="d"
+             SizeToContent="WidthAndHeight" 
+             MinWidth="300"
+             Title="Создание нескольких листов">
+    <StackPanel>
+        <Label Content="Выбрать формат"
+               Margin="5"/>
+        <ComboBox ItemsSource="{Binding TitleBlockType}"
+                 SelectedValue="{Binding SelectedTitleBlockType}"
+                  DisplayMemberPath="Name"
+                  Margin="5"/>
+
+        <Label Content="Выбрать вид"
+               Margin="5"/>
+        
+        <ComboBox ItemsSource="{Binding Views}"
+                 SelectedValue="{Binding SelectedView}"
+                  DisplayMemberPath="Name"
+                  Margin="5"/>
+        
+        <Label Content="Количество создаваемых листов"
+               Margin="5"/>
+
+        <TextBox Text="{Binding Amount}"
+                 Margin="5"/>
+
+        <Label Content="Разработал"
+               Margin="5"/>
+
+        <TextBox Text="{Binding DesignedBy}"
+                 Margin="5"/>
+        
+        <Button Content="Создать листы"
+                Command="{Binding CreateSheetCommand}"
+                Margin="5"
+                Padding="5"/>
+    </StackPanel>
+</Window>

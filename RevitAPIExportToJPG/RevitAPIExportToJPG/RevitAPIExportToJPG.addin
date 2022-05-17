@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly> "C:\Program Files\RevitAPITraining\RevitAPIExportToJPG.dll" </Assembly>
+		<AddInId>2841A54B-3EA5-4099-83E4-7D7FAE3F4891</AddInId>
+		<FullClassName>RevitAPIExportToJPG.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Экспорт в JPG плана 1 этажа</Text>
+	</AddIn>
+</RevitAddIns>
